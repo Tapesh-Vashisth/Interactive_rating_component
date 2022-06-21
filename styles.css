@@ -3,6 +3,10 @@
     padding: 0px;
 }
 
+a{
+    all: unset;
+}
+
 body {
     color: white;
     font-size: 15px;
@@ -95,6 +99,9 @@ button{
     background-color: hsl(25, 97%, 53%);
     color: white;
     border: none;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 1000ms;
 }
 
 button:hover{
@@ -137,7 +144,9 @@ button:hover{
     border-radius: 100%;
     display: grid;
     align-items: center;
-    background-color: hsla(217, 12%, 63%, 0.5);;
+    background-color: hsla(217, 12%, 63%, 0.5);
+    transition: all;
+    transition-delay: 100ms;
 }
 
 

@@ -24,12 +24,9 @@ $(function(){
     $("button").on("click", function(e){
         e.preventDefault();
         if (rating !== undefined){
-            console.log(rating);
-            $("#rating").css({
-                'display' : 'none'
-            });
-            $("#thanks").css({
-                'display' : 'grid'
+            $("#rating").hide();
+            $("#thanks").fadeIn().css({
+                "display": "grid"
             });
             $("#rate").text(rating);
         }else{
